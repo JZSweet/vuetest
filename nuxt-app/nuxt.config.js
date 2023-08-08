@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  // css: ['~/assets/styles/main.css'],
+  css: ['~/assets/styles/main.css'],
   modules: [
     '@nuxtjs/sanity',
     // '@pinia/nuxt',
@@ -7,5 +7,11 @@ export default defineNuxtConfig({
   buildModules: ['@nuxtjs/sanity/module'],
   sanity: {
     projectId: process.env.SANITY_PROJECT_ID,
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
 });

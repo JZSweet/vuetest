@@ -1,0 +1,8 @@
+@tailwind components;
+
+@layer components {
+    .test {
+        @apply font-bold;
+    }
+
+}
