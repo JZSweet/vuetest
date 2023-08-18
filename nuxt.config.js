@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  css: ['~/assets/styles/main.css'],
+  css: ['~/styles/main.css'],
   modules: [
     '@nuxtjs/sanity',
     // '@pinia/nuxt',
